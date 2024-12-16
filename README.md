@@ -1,14 +1,21 @@
-### Tofu - memory efficient modal terminal hex editor
+## Tofu - memory efficient modal terminal hex editor
 
 (based on fork: https://github.com/lineality/teehee_noload_fork)
 
-'Tofu' text (hex) editor (a Teehee fork) loads from a file only up to 3x the size of what the terminal can show at a time, and uses a chunk-window system to move the window as the user scrolls.
+'Tofu' text editor (hex editor) loads from a file only up to 3x the size of what the terminal can show at a time, and uses a chunk-window system to move the window as the user scrolls.
 
 
-### linux: for small build, use (for me executible is 1.8mb)
+## linux: for small build, use (for me executible is 1.8mb)
 ```bash
 cargo build --profile release-small 
 ```
+
+
+## Option debug_log
+Turn a file's constant DEBUG_FLAG is set to boolean true, 
+then a logs will be printed to a tofu_debug.text file in 
+the current working directory.
+
 
 # Original Teehee here:
 https://github.com/Gskartwii/teehee/releases

@@ -12,7 +12,7 @@ use crossterm::terminal;
 use std::env;
 
 const STDOUT_BUF: usize = 8192;
-const DEBUG_LOG: bool = false;
+const DEBUG_FLAG: bool = false;
 
 fn debug_log(message: &str) {
     /*
@@ -24,7 +24,7 @@ fn debug_log(message: &str) {
         UNIX_EPOCH
     };
     */
-    if DEBUG_LOG {
+    if DEBUG_FLAG {
         if let Ok(cwd) = env::current_dir() {
             let log_path = cwd.join("tofu_debug.log");
 

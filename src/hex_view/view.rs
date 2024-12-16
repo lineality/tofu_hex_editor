@@ -53,7 +53,7 @@ const LEFTARROW: &str = "";
 // Oh my Uma, it's a Debug-Log... 
 // Why is this returning a result???
 // todo THis never does ANYTHING
-const DEBUG_LOG: bool = false;
+const DEBUG_FLAG: bool = false;
 
 fn debug_log(message: &str) {
     /*
@@ -65,7 +65,7 @@ fn debug_log(message: &str) {
         UNIX_EPOCH
     };
     */
-    if DEBUG_LOG {
+    if DEBUG_FLAG {
         if let Ok(cwd) = env::current_dir() {
             let log_path = cwd.join("tofu_debug.log");
 
