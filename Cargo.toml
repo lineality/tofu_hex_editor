@@ -1,0 +1,31 @@
+[package]
+name = "tofu"
+description = "TeeHee Lite: Fork that does not load whole file, Based on https://github.com/Gskartwii/teehee Gskartwii <ahannula4@gmail.com> Hex editor with inspiration from Vim, Kakoune and Hiew"
+version = "0.2.8"
+authors = ["Geoffrey Gordon Ashbrook <lineality@gmail.com>"]
+license = "Apache-2.0"
+edition = "2021"
+readme = "README.md"
+repository = "https://github.com/lineality/teehee_noload_fork"
+keywords = ["cli", "terminal", "editor"]
+categories = ["command-line-utilities"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+crossterm = "0.22.1"
+xi-rope = "0.3.0"
+lazy_static = "1.4.0"
+jetscii = "0.5"
+regex = "1"
+maplit = "1.0.2"
+
+[profile.release-small]
+inherits = "release"
+lto = "thin"
+codegen-units = 1
+strip = "symbols"
+panic = "abort"
+incremental = false
+opt-level = 3
+
