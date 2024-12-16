@@ -1,12 +1,12 @@
 [package]
 name = "tofu"
-description = "TeeHee Lite: Fork that does not load whole file, Based on https://github.com/Gskartwii/teehee Gskartwii <ahannula4@gmail.com> Hex editor with inspiration from Vim, Kakoune and Hiew"
+description = "Cli Hex Editor that does not load whole file, Based on https://github.com/Gskartwii/teehee Gskartwii <ahannula4@gmail.com> Hex editor with inspiration from Vim, Kakoune and Hiew"
 version = "0.2.8"
 authors = ["Geoffrey Gordon Ashbrook <lineality@gmail.com>"]
 license = "Apache-2.0"
 edition = "2021"
 readme = "README.md"
-repository = "https://github.com/lineality/teehee_noload_fork"
+repository = "https://github.com/lineality/tofu_hex_editor"
 keywords = ["cli", "terminal", "editor"]
 categories = ["command-line-utilities"]
 

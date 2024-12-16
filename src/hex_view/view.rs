@@ -26,10 +26,10 @@ use crossterm::{
 use xi_rope::{
     Interval,
     Delta,
-    Rope
+    // Rope
 };
 use xi_rope::tree::TreeBuilder;
-use xi_rope::multiset::SubsetBuilder;
+// use xi_rope::multiset::SubsetBuilder;
 use crate::byte_rope::Bytes;  // TODO Horrible name that will collide this must be changed
 use std::time::{
     SystemTime, 
@@ -67,7 +67,7 @@ fn debug_log(message: &str) {
     */
     if DEBUG_LOG {
         if let Ok(cwd) = env::current_dir() {
-            let log_path = cwd.join("teehee_debug.log");
+            let log_path = cwd.join("tofu_debug.log");
 
             // Check if path exists and is writable
             if log_path.exists() {

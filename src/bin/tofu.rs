@@ -26,7 +26,7 @@ fn debug_log(message: &str) {
     */
     if DEBUG_LOG {
         if let Ok(cwd) = env::current_dir() {
-            let log_path = cwd.join("teehee_debug.log");
+            let log_path = cwd.join("tofu_debug.log");
 
             // Check if path exists and is writable
             if log_path.exists() {
@@ -48,7 +48,7 @@ fn debug_log(message: &str) {
 
 
 fn main() {
-    debug_log("Starting teehee");
+    debug_log("Starting Tofu");
 
 
     let stdout = stdout();
