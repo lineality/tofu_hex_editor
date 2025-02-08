@@ -19,13 +19,13 @@ hx ~/.bashrc
 ```
 or in some systems it may be called 'b'ash_profile'
 
-2. Add an alias for your executable at the end of the file. Replace your_executable with the name of your executable and /path/to/your_executable with the full path to your executable.
-```bash
+2. Add an alias for your executable at the end of the file. Replace your_executable with the name of your executable and /path/to/your_executable with the full path to your executable. Add:
+```text
 alias your_keyword='/path/to/your_executable'
 ```
-e.g.
-```bash
-/home/COMPUTERNAME/tofu_soft/tofu
+e.g. add:
+```text
+alias tofu='/home/COMPUTERNAME/tofu_soft/tofu'
 ```
 
 3. Save and close the text editor. 
